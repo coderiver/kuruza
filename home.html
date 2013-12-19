@@ -9,12 +9,14 @@
 	<link href='http://fonts.googleapis.com/css?family=Tinos&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
 <!-- BEGIN  out-->
 <div class="out">
+	<!-- BEGIN header -->
 	<header class="header">
 		<div class="wrap">
 			<!-- BEGIN logo -->
@@ -55,10 +57,51 @@
 						<a class="menu-link" href="#">MBFW</a>
 					</li>
 				</ul>
+				<div class="search">
+					<input type="text">
+				</div>
 			</nav>
 			<!-- END navigation -->
 		</div>
+		<div class="header-slider">
+			<div class="example-pager"></div>
+			<div class="cycle-slideshow"
+			data-cycle-fx="scrollHorz" 
+    		data-cycle-timeout="2000"
+    		data-cycle-slides="> div"
+    		data-cycle-pager=".example-pager"
+			>
+				<div class="header-slider__item">
+					<img src="img/pict1.jpg" alt="">
+					<div class="wrap">
+						<div class="header-slider__title">
+							<div class="header-slider__date">24 <span>sep tem ber</span></div>
+							<div class="header-slider__name">ukraine fashn weeks 2013</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-slider__item">
+					<img src="img/pict1.jpg" alt="">
+					<div class="wrap">
+						<div class="header-slider__title">
+							<div class="header-slider__date">24 <span>sep tem ber</span></div>
+							<div class="header-slider__name">ukraine fashn weeks 2013</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-slider__item">
+					<img src="img/pict1.jpg" alt="">
+					<div class="wrap">
+						<div class="header-slider__title">
+							<div class="header-slider__date">24 <span>sep tem ber</span></div>
+							<div class="header-slider__name">ukraine fashn weeks 2013</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
 	</header>
+	<!-- END header -->
 </div>
 <!-- END out-->
 

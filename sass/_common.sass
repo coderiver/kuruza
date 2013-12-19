@@ -62,7 +62,10 @@ $gold: #e1c88c
 
 // nav
 .nav
+	position: relative
 	text-align: center
+	height: 68px
+	margin-bottom: 28px  
 .menu
 	position: relative
 	display: inline-block
@@ -148,5 +151,29 @@ $gold: #e1c88c
 .sub-menu.is-active
 	+opacity(1)
 	visibility: visible
+	
+// search
+.search
+	position: absolute
+	top: 0
+	right: 0
+	width: 92px
+	height: 24px
+	+box
+	text-align: left
+	border: 1px solid #e0c78b
+	background: #e0c78b
+	&:after
+		content: ""
+		position: absolute
+		top: 4px 
+		right: 4px
+		+s(search) 
+	input
+		width: 67px
+		height: 22px
+		padding: 0 9px
+		+box  
+		+box-shadow(inset 0 0 1px #f3e8d0) 	
 
 			 				
