@@ -10,6 +10,7 @@
 	overflow: hidden
 	img
 		width: 100%
+		min-height: 577px
 		height: auto  
 .header-slider__title
 	position: absolute
@@ -47,8 +48,18 @@
 		margin: 0 5px
 		+box 
 		+border-radius(50%)
-		background: rgba(255,255,255, .5)
+		background: rgba(255,255,255, .6)
 		cursor: pointer
 	span.cycle-pager-active
 		background: #e0c78b
-		border: 1px solid #e6d1a1 	    	  		
+		border: 1px solid #e6d1a1
+		
+// masonry blocks
+.post
+	width: 345px
+	
+// sidebar
+.sidebar
+	float: right
+	width: 345px 		
+
