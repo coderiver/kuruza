@@ -41,9 +41,112 @@
 // 	font-family: "book",arial,sans-serif 
 	
 body
+	min-width: 1080px
 	font-size: 16px 
 	font-family: 'Tinos', serif
 	line-height: 1.4
-
+	
+$gold: #e1c88c
 
 // common blocks
+.wrap
+	width: 1080px
+	margin: 0 auto
+
+// header
+.header
+	padding-top: 35px 	
+.logo
+	margin-bottom: 50px 
+	text-align: center
+
+// nav
+.nav
+	text-align: center
+.menu
+	position: relative
+	display: inline-block
+	+clr
+.menu__item
+	position: relative
+	float: left
+	margin: 0 38px 
+.menu-link
+	position: relative
+	font-weight: bold
+	color: #000
+	text-transform: uppercase
+	&:before
+		content: ""
+		position: absolute
+		top: -5px
+		left: -150%
+		height: 2px
+		width: 100%
+		background: $gold
+		+tr(400ms all)
+		+opacity(0)
+	&:after
+		content: ""
+		position: absolute
+		bottom: -5px
+		left: 150%
+		height: 2px
+		width: 100%
+		background: $gold
+		+tr(400ms all)
+		+opacity(0)	   
+	&:hover
+		&:before
+			left: 0
+			+opacity(1)
+		&:after
+			left: 0
+			+opacity(1)
+.menu-link.is-active
+	&:before
+		left: 0
+		+opacity(1)
+	&:after
+		left: 0
+		+opacity(1)
+.sub-menu
+	position: absolute
+	left: 0
+	width: 749px
+	margin-left: -344px
+	padding-top: 18px   
+	text-align: center
+	+tr(400ms all)
+	+opacity(0)
+	visibility: hidden
+	+clr
+	+gpu
+	li
+		display: inline-block
+		height: 22px 
+		margin: 0 32px 
+		a
+			position: relative
+			text-transform: none
+			font-weight: normal
+			color: #000
+			&:before
+				content: ""
+				position: absolute
+				top: 6px
+				left: -15px
+				height: 5px
+				width: 5px
+				+border-radius(2px)
+				background: $gold
+				+tr(400ms all)
+			&:hover
+				&:before
+					left: -29px
+					width: 19px
+.sub-menu.is-active
+	+opacity(1)
+	visibility: visible
+
+			 				
