@@ -143,28 +143,31 @@ $gold: #e1c88c
 		height: 22px 
 		margin: 0 32px 
 		a
-			position: relative
 			text-transform: none
 			font-weight: normal
 			color: #000
-			&:before
-				content: ""
-				position: absolute
-				top: 6px
-				left: -15px
-				height: 5px
-				width: 5px
-				+border-radius(2px)
-				background: $gold
-				+tr(400ms all)
-			&:hover
-				&:before
-					left: -29px
-					width: 19px
+			
 .sub-menu.is-active
 	+opacity(1)
 	visibility: visible
-	
+
+// animated link
+.a-link
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 6px
+		left: -15px
+		height: 5px
+		width: 5px
+		+border-radius(2px)
+		background: $gold
+		+tr(400ms all)
+	&:hover
+		&:before
+			left: -29px
+			width: 19px
 // search
 .search
 	position: absolute
@@ -193,11 +196,7 @@ $gold: #e1c88c
 .h2
 	text-align: center
 	font-weight: bold
-	font-size: 42px
-.h2_lines
-	border-top: 2px solid $gold
-	border-bottom: 2px solid $gold
-	text-transform: uppercase 
+	font-size: 42px 
 .h3
 	font-weight: bold
 	font-size: 35px
@@ -205,10 +204,18 @@ $gold: #e1c88c
 	a
 		font-weight: bold
 		font-size: 35px
-		color: #000 	
-// rubric
-.rubric-list
-	padding: 26px 24px
+		color: #000
+.h5
+	font-weight: bold
+	font-size: 16px
+	color: #000	 		 	
+.h_lines
+	border-top: 2px solid $gold
+	border-bottom: 2px solid $gold
+	text-transform: uppercase
+
+// justifying blocks to 100% width
+.justify
 	text-align: justify
 	line-height: 0
 	font-size: 1px
@@ -221,26 +228,20 @@ $gold: #e1c88c
 		width: 100%
 		height: 0px
 		visibility: hidden
-		overflow: hidden	
-.rubric
-	width: 207px 
+		overflow: hidden
+.justify__child
 	text-align: center
 	display: inline-block
 	line-height: normal
-	font-size: 21px
-	vertical-align: top
-	img
-		width: 100%
-		margin-bottom: 18px  
-		+box
-		border: 1px solid rgba(153,122,72,.1)
-	a
-		color: #000
-		&:hover
-			font-weight: bold
-			
+	vertical-align: top		
+
 // widget
 .widget
-	margin-bottom: 30px				 
+	margin-bottom: 30px
+	
+// footer
+.footer__main
+	height: 46px
+	background: $gold  		
 
 			 				

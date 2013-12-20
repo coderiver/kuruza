@@ -83,7 +83,59 @@
 	font-weight: bold
 	font-size: 23px
 	color: #000
-	line-height: 1 	 
+	line-height: 1 
+.add-post
+	position: relative
+	display: block
+	width: 346px
+	height: 566px  
+	border: 2px solid #e1c78b
+	&:hover
+		border: 2px solid #e1c78b
+.add-post__arrow
+	position: absolute
+	top: 103px
+	left: 50%
+	margin-left: -76px
+	width: 142px
+	height: 142px
+	+border-radius(50%)
+	border: 5px solid #e0c78b
+	&:after
+		content: ""
+		position: absolute
+		top: 56px
+		left: 40px
+		+s(arr-down)
+.add-post__text
+	position: absolute
+	bottom: 90px
+	left: 50%
+	width: 250px
+	margin-left: -125px  
+	font-size: 63px
+	font-weight: bold
+	color: $gold
+	text-align: center 
+
+// rubric
+.rubric-wpapper
+	margin-bottom: 90px 
+.rubric-list
+	padding: 26px 24px
+.rubric
+	width: 207px 
+	font-size: 21px
+	img
+		width: 100%
+		margin-bottom: 18px  
+		+box
+		border: 1px solid rgba(153,122,72,.1)
+	a
+		color: #000
+		&:hover
+			font-weight: bold
+	
 // sidebar
 .sidebar
 	float: right
@@ -92,5 +144,23 @@
 	border: 1px solid #fff
 	img
 		width: 345px
-		height: auto   		
+		height: auto
+		
+// footer bot menu
+.bot-menu
+	margin-bottom: 120px 				 
+.bot-menu__item
+	text-align: left
+	width: 207px
+	.h5
+		display: inline-block
+		padding: 2px 9px 
+		margin-bottom: 19px
+.bot-menu-list
+	padding-left: 15px
+	li
+		margin-bottom: 5px 
+	a
+		color: #000
+		font-size: 16px  		   		
 
