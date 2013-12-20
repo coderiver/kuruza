@@ -192,7 +192,8 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .weather-look__img { font-size: 0; display: block; }
 
-.weather-look__date { position: absolute; bottom: 71px; left: 0; padding: 18px 15px; background: #e1c88c; color: black; font-weight: bold; font-size: 35px; }
+.weather-look__date { position: absolute; bottom: 71px; left: 0; padding: 18px 15px; background: white; color: black; font-weight: bold; font-size: 35px; -webkit-transition: background 300ms; -moz-transition: background 300ms; -o-transition: background 300ms; transition: background 300ms; }
+.weather-look__date:hover { background: #e1c88c; }
 
 .popular-list { padding-top: 32px; }
 

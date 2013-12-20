@@ -173,10 +173,13 @@
 	bottom: 71px
 	left: 0
 	padding: 18px 15px
-	background: $gold
+	background: #fff
 	color: #000
 	font-weight: bold
 	font-size: 35px
+	+transition(background 300ms)
+	&:hover
+		background: $gold 
 .popular-list
 	padding-top: 32px 
 .popular__item
