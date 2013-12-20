@@ -86,7 +86,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .widget { margin-bottom: 30px; }
 
-.footer__main { height: 41px; padding-top: 5px; background: #e1c88c; }
+.footer__main { overflow: hidden; height: 41px; padding-top: 5px; background: #e1c88c; }
 
 .copyrights { float: left; color: white; line-height: 37px; font-size: 13px; }
 .copyrights span:first-child { text-transform: uppercase; }
