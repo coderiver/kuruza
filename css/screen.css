@@ -35,6 +35,8 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .logo_small { position: absolute; top: 19px; left: 42px; margin-bottom: 0; z-index: 2; }
 
+.logo_footer { float: left; margin-right: 21px; }
+
 .topper { position: relative; height: 87px; padding-top: 48px; }
 
 .nav { position: relative; text-align: center; height: 68px; margin-bottom: 28px; }
@@ -84,7 +86,10 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .widget { margin-bottom: 30px; }
 
-.footer__main { height: 46px; background: #e1c88c; }
+.footer__main { height: 41px; padding-top: 5px; background: #e1c88c; }
+
+.copyrights { float: left; color: white; line-height: 37px; font-size: 13px; }
+.copyrights span:first-child { text-transform: uppercase; }
 
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
