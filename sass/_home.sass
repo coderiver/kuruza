@@ -56,10 +56,41 @@
 		
 // masonry blocks
 .post
-	width: 345px
-	
+	width: 346px
+	margin-bottom: 75px
+	border: 1px solid #fff
+	+box
+	&:hover
+		border: 1px solid #d8d8d8
+.post__img
+	display: block
+	font-size: 0
+.post__content
+	padding: 20px 24px 	 	
+.post__info
+	+clr
+	font-weight: bold
+	font-style: italic
+.post__type
+	float: left
+	font-size: 21px 
+	color: $gold
+.post__date
+	float: right
+	font-size: 17px
+	color: #b2b2b2 			
+.post__sub-title
+	font-weight: bold
+	font-size: 23px
+	color: #000
+	line-height: 1 	 
 // sidebar
 .sidebar
 	float: right
-	width: 345px 		
+	width: 345px
+	margin-left: 23px 
+	border: 1px solid #fff
+	img
+		width: 345px
+		height: auto   		
 

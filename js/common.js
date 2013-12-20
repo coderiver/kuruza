@@ -13,4 +13,12 @@ $(document).ready(function() {
 		}
 	);
 
+	// masonry bricks
+ 	
+	$('.masonry').masonry({
+	  columnWidth: 368,
+	  itemSelector: '.post',
+	  cornerStampSelector: '.sidebar'
+	});
+
 });
