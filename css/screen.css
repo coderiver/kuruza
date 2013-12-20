@@ -67,7 +67,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .a-link:hover:before { left: -29px; width: 19px; }
 
 .search { position: absolute; top: 0; right: 0; width: 92px; height: 24px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: left; border: 1px solid #e0c78b; background: #e0c78b; }
-.search:after { content: ""; position: absolute; top: 4px; right: 4px; background: url('../img/icons-sd797da7871.png') 0 -45px no-repeat; width: 15px; height: 15px; }
+.search:after { content: ""; position: absolute; top: 4px; right: 4px; background: url('../img/icons-s29acbcd58b.png') 0 -498px no-repeat; width: 15px; height: 15px; }
 .search input { width: 67px; height: 22px; padding: 0 9px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: inset 0 0 1px #f3e8d0; -moz-box-shadow: inset 0 0 1px #f3e8d0; box-shadow: inset 0 0 1px #f3e8d0; }
 
 .h2 { text-align: center; font-weight: bold; font-size: 42px; }
@@ -90,6 +90,33 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .copyrights { float: left; color: white; line-height: 37px; font-size: 13px; }
 .copyrights span:first-child { text-transform: uppercase; }
+
+.footer__bot { height: 56px; line-height: 56px; text-align: center; }
+
+.pugupugu { position: relative; display: inline-block; color: black; font-size: 16px; }
+.pugupugu:before { content: ""; position: absolute; top: 14px; left: -50px; background: url('../img/icons-s29acbcd58b.png') 0 -127px no-repeat; width: 31px; height: 32px; }
+
+.socials { float: right; font-size: 0; }
+.socials li { display: inline-block; margin-left: 10px; }
+.socials i { display: block; }
+
+.fb { background: url('../img/icons-s29acbcd58b.png') 0 -456px no-repeat; width: 32px; height: 32px; }
+.fb:hover { background: url('../img/icons-s29acbcd58b.png') 0 -564px no-repeat; width: 34px; height: 32px; }
+
+.tw { background: url('../img/icons-s29acbcd58b.png') 0 -523px no-repeat; width: 31px; height: 31px; }
+.tw:hover { background: url('../img/icons-s29acbcd58b.png') 0 -292px no-repeat; width: 31px; height: 31px; }
+
+.vk { background: url('../img/icons-s29acbcd58b.png') 0 -333px no-repeat; width: 31px; height: 31px; }
+.vk:hover { background: url('../img/icons-s29acbcd58b.png') 0 -210px no-repeat; width: 31px; height: 31px; }
+
+.pinterest { background: url('../img/icons-s29acbcd58b.png') 0 -415px no-repeat; width: 31px; height: 31px; }
+.pinterest:hover { background: url('../img/icons-s29acbcd58b.png') 0 -251px no-repeat; width: 31px; height: 31px; }
+
+.instagram { background: url('../img/icons-s29acbcd58b.png') 0 -374px no-repeat; width: 31px; height: 31px; }
+.instagram:hover { background: url('../img/icons-s29acbcd58b.png') 0 -86px no-repeat; width: 31px; height: 31px; }
+
+.yt { background: url('../img/icons-s29acbcd58b.png') 0 -169px no-repeat; width: 31px; height: 31px; }
+.yt:hover { background: url('../img/icons-s29acbcd58b.png') 0 -45px no-repeat; width: 31px; height: 31px; }
 
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
@@ -131,7 +158,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .add-post:hover { border: 2px solid #e1c78b; }
 
 .add-post__arrow { position: absolute; top: 103px; left: 50%; margin-left: -76px; width: 142px; height: 142px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 5px solid #e0c78b; }
-.add-post__arrow:after { content: ""; position: absolute; top: 56px; left: 40px; background: url('../img/icons-sd797da7871.png') 0 0 no-repeat; width: 60px; height: 35px; }
+.add-post__arrow:after { content: ""; position: absolute; top: 56px; left: 40px; background: url('../img/icons-s29acbcd58b.png') 0 0 no-repeat; width: 60px; height: 35px; }
 
 .add-post__text { position: absolute; bottom: 90px; left: 50%; width: 250px; margin-left: -125px; font-size: 63px; font-weight: bold; color: #e1c88c; text-align: center; }
 
