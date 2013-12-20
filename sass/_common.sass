@@ -53,7 +53,7 @@ $gold: #e1c88c
 	width: 1080px
 	margin: 0 auto
 .wrapper
-	+clr
+	+clr		
 // header
 .header
 	padding-top: 35px 	
@@ -208,6 +208,10 @@ $gold: #e1c88c
 		font-weight: bold
 		font-size: 35px
 		color: #000
+.h4
+	font-weight: bold
+	font-size: 26px
+	color: #000 		
 .h5
 	font-weight: bold
 	font-size: 16px
@@ -240,8 +244,24 @@ $gold: #e1c88c
 
 // widget
 .widget
+	position: relative
 	margin-bottom: 30px
-	
+	text-align: center
+.widget__title
+	position: absolute
+	top: 0px
+	left: 0
+	right: 0
+	text-align: center
+	z-index: 2
+	.h4
+		display: inline-block
+		background: #fff
+		padding: 10px 20px		
+.widget__inner
+	position: relative
+	padding-top: 40px 
+
 // footer
 .footer__main
 	overflow: hidden

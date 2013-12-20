@@ -75,6 +75,8 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .h3 { font-weight: bold; font-size: 35px; color: black; }
 .h3 a { font-weight: bold; font-size: 35px; color: black; }
 
+.h4 { font-weight: bold; font-size: 26px; color: black; }
+
 .h5 { font-weight: bold; font-size: 16px; color: black; }
 
 .h_lines { border-top: 2px solid #e1c88c; border-bottom: 2px solid #e1c88c; text-transform: uppercase; }
@@ -84,7 +86,12 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .justify__child { text-align: center; display: inline-block; line-height: normal; vertical-align: top; }
 
-.widget { margin-bottom: 30px; }
+.widget { position: relative; margin-bottom: 30px; text-align: center; }
+
+.widget__title { position: absolute; top: 0px; left: 0; right: 0; text-align: center; z-index: 2; }
+.widget__title .h4 { display: inline-block; background: white; padding: 10px 20px; }
+
+.widget__inner { position: relative; padding-top: 40px; }
 
 .footer__main { overflow: hidden; height: 41px; padding-top: 5px; background: #e1c88c; }
 
@@ -182,3 +189,23 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .bot-menu-list { padding-left: 15px; }
 .bot-menu-list li { margin-bottom: 5px; }
 .bot-menu-list a { color: black; font-size: 16px; }
+
+.weather-look__img { font-size: 0; display: block; }
+
+.weather-look__date { position: absolute; bottom: 71px; left: 0; padding: 18px 15px; background: #e1c88c; color: black; font-weight: bold; font-size: 35px; }
+
+.popular-list { padding-top: 32px; }
+
+.popular__item { *zoom: 1; }
+.popular__item:after { content: " "; display: table; clear: both; }
+
+.popular__left { float: left; width: 112px; margin-right: 21px; }
+
+.popular__img img { width: 100%; height: auto; }
+
+.popular__right { float: right; width: 212px; padding-top: 18px; text-align: left; }
+
+.popular__type { margin-bottom: 5px; color: #c5c5c5; }
+
+.popular__link { color: black; font-size: 24px; line-height: 1; }
+.popular__link:hover { font-weight: bold; }
