@@ -205,4 +205,269 @@
 	font-size: 24px
 	line-height: 1 
 	&:hover
-		font-weight: bold 		  	
+		font-weight: bold
+.horoscope__inner
+	+clr
+	margin-top: 15px
+.horoscope__col
+	float: left
+	width: 50%
+	+clr
+.horoscope__img
+	float: left
+	img
+		width: auto
+.horoscope__info
+	font-size: 10px
+	padding-top: 12px  		
+.horoscope__title
+	font-size: 18px
+.horoscope__recommend
+	padding-left: 15px 
+	border-left: 2px solid $gold
+	font-size: 25px
+	line-height: 1 
+	text-align: left
+.hit__img 
+	display: block
+	font-size: 0
+.hit__link 
+	position: absolute
+	bottom: 70px
+	left: 0
+	padding: 0 13px 0 32px
+	font-size: 30px
+	text-align: left
+	+transition(background 300ms)
+	background: #fff
+	color: #000
+	.hit__name
+		position: absolute
+		top: 42px
+		left: 0
+		font-size: 22px
+		padding: 0 13px 0 32px
+		background: #fff
+		+transition(background 300ms)  
+	&:hover
+		background: $gold
+		span
+			background: $gold
+.recommend-list
+	padding-top: 55px 			 		 
+.recommend__item
+	+clr
+	font-size: 0
+	text-align: left
+	margin-bottom: 20px 
+.recommend__img
+	display: inline-block
+	margin-right: 33px
+	vertical-align: middle  
+	img
+		width: auto
+.recommend__name
+	display: inline-block
+	vertical-align: middle
+	font-size: 21px
+	text-transform: uppercase
+	color: #000
+	&:hover
+		font-weight: bold
+.calendar__inner
+	position: relative
+	border: 2px solid $gold
+	+box 				
+.calendar__img
+	font-size: 0
+	display: block
+	img
+		width: 341px
+.event-content
+	position: relative		 
+.event-link
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	width: 121px
+	padding: 52px 34px 26px 17px 
+	background: $gold
+	font-size: 23px
+	font-weight: bold
+	color: #000
+	text-align: left
+	span
+		position: absolute
+		bottom: 26px
+		left: 17px
+		font-size: 16px
+		font-weight: normal
+.calendar-tabs
+	padding: 12px 0
+	+clr 		   			 		 			 	 			 		  	
+	li
+		float: left
+		width: 50%
+		+box 
+		border-left: 2px solid $gold
+		&:first-child
+			border-left: none
+		i
+			display: inline-block
+			cursor: pointer	 
+	li.is-active
+		.ico-event
+			+s(event-active)
+		.ico-calendar
+			+s(calendar-active)	
+.ico-event
+	+s(event)						
+.ico-calendar
+	+s(calendar)
+.subscribe
+	border: 2px solid $gold
+	text-align: center
+	padding: 17px 
+.subscribe__title
+	font-size: 26px
+	font-weight: bold
+.subscribe__text
+	display: inline-block
+	font-size: 13px
+	width: 50%
+	line-height: 1
+	margin-bottom: 20px 
+.subscribe__input
+	position: relative 
+	input[type="text"]
+		width: 160px 
+		text-align: center
+		border-bottom: 2px solid $gold
+		+placeholder
+			font-style: italic
+			color: #a6a6a6
+		&:focus
+			+placeholder
+				font-size: 0	
+		&:focus + .subscribe__submit
+			display: inline-block	
+.subscribe__submit
+	display: none
+	position: absolute
+	right: 5px
+	top: -3px
+	font-size: 0
+	+s(letter)
+	cursor: pointer
+.month
+	margin: 50px 0 45px 
+	position: relative
+	text-align: center
+	font-size: 26px
+	font-weight: bold 
+.month__prev
+	position: absolute
+	top: 0
+	left: 30px
+	+s(prev)
+.month__next
+	position: absolute
+	top: 0
+	right: 30px
+	+s(next)
+.calendar-table
+	width: 295px
+	margin: 0 auto
+	a
+		display: inline-block
+		width: 30px
+		height: 30px
+		line-height: 32px 
+		color: #000
+		font-weight: bold
+		+border-radius(50%)
+		border: 1px solid #fff
+		&:hover
+			border: 1px solid $gold  
+	.inactive
+		color: #b3b3b3
+	.yellow
+		color: $gold
+	.current-date
+		background: $gold
+		border: 1px solid $gold 				
+.week
+	margin-bottom: 20px
+.event-list
+	+clr
+	margin: 22px 22px 0px
+	padding-bottom: 30px 
+	border-bottom: 1px solid $gold
+	+box-shadow(inset 0px -1px 0px #f1e6cc, 0 1px 0px #f1e6cc) 
+	li
+		float: left
+		margin-left: 20px
+		&:first-child
+			margin-left: 0 
+		img
+			width: 58px
+			height: 58px
+			+border-radius(50%)
+	li.is-active
+		img
+			border: 2px solid $gold
+.event-slider
+	position: relative
+	margin: 22px 25px 0
+	padding-bottom: 25px 
+	border-bottom: 1px solid $gold
+	+box-shadow(inset 0px -1px 0px #f1e6cc, 0 1px 0px #f1e6cc)
+.event-slider__content
+	display: block
+	padding: 0 15px 
+	+clr
+	color: #000
+	&:hover
+		.event-slider__img
+			img
+				border: 2px solid $gold	
+.event-slider__img
+	float: left
+	margin-right: 5px 
+	img
+		width: 54px
+		height: 54px
+		+border-radius(50%)
+		border: 2px solid #fff	
+.event-slider__text
+	float: left
+	font-size: 0
+	line-height: 1  
+.event-slider__title
+	font-size: 23px
+	font-weight: bold
+	margin-bottom: 3px 
+.event-slider__info
+	font-size: 11px
+	+clr
+	text-align: left
+.event-slider__left
+	float: left
+	width: 48px
+	padding-left: 8px 
+	color: #cbcbcb
+.event-slider__right
+	float: right
+	width: 142px
+	font-weight: bold
+.event-slider__prev
+	position: absolute
+	top: 22px
+	left: -8px
+	+s(prev-small)
+.event-slider__next
+	position: absolute
+	top: 22px
+	right: -8px
+	+s(next-small)		
