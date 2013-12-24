@@ -361,3 +361,13 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .event-slider__prev { position: absolute; top: 22px; left: -8px; background: url('../img/icons-s4b08825758.png') 0 -892px no-repeat; width: 8px; height: 14px; }
 
 .event-slider__next { position: absolute; top: 22px; right: -8px; background: url('../img/icons-s4b08825758.png') 0 -916px no-repeat; width: 8px; height: 14px; }
+
+.l-error-404 { background: url(../img/404-bg.jpg) 0 0 no-repeat; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+.error-404 { position: relative; }
+
+.error-404__link { position: absolute; left: 50px; top: 290px; font-size: 31px; font-weight: bold; color: white; line-height: 1.2; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+.error-404__link:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; text-decoration: underline; }
+
+.error-404__alert { position: absolute; top: 500px; left: 50px; width: 308px; font-size: 33px; color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+.error-404__alert span { display: block; font-weight: bold; font-size: 123px; }
