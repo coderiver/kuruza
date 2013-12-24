@@ -21,4 +21,23 @@ $(document).ready(function() {
 	  cornerStampSelector: '.sidebar'
 	});
 
+	// search
+	
+	$(".search").hover(
+		function(){
+			$(this).addClass('is-active');
+			$(this).parent().find(".menu__item").css('margin', '0 23px');
+		},
+		function(){
+			$(this).removeClass('is-active');
+			$(this).parent().find(".menu__item").css('margin', '0 38px')
+		}
+	);
+
+	// scroll pane
+
+	jQuery(function(){
+        jQuery('.scroll-pane').jScrollPane();
+    });
+
 });

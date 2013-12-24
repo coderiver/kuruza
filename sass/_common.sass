@@ -89,7 +89,8 @@ $gold: #e1c88c
 .menu__item
 	position: relative
 	float: left
-	margin: 0 38px 
+	margin: 0 38px
+	+transition(all 400ms) 
 .menu-link
 	position: relative
 	font-weight: bold
@@ -176,24 +177,71 @@ $gold: #e1c88c
 	position: absolute
 	top: 0
 	right: 0
-	width: 92px
 	height: 24px
 	+box
 	text-align: left
-	border: 1px solid #e0c78b
-	background: #e0c78b
-	&:after
-		content: ""
-		position: absolute
-		top: 4px 
-		right: 4px
-		+s(search) 
+	span
+		display: inline-block
+		height: 22px
+		width: 22px
+		background: #e0c78b 
+	i
+		position: relative
+		top: 3px
+		left: 4px
+		display: inline-block
+		+s(search)	 
 	input
 		width: 67px
 		height: 22px
 		padding: 0 9px
-		+box  
+		border: 1px solid $gold
+		+transition(all 400ms)
+		+box 
 		+box-shadow(inset 0 0 1px #f3e8d0)
+		+placeholder
+			color: #fff
+		&:hover
+			width: 250px
+			border: 1px solid #fff
+			border-bottom: 2px solid $gold
+			+placeholder
+				color: #b4b4b4  
+		&:hover + span
+			display: none  
+.search.is-active
+	span
+		display: none		
+	 			 
+.search__dropdown		
+	padding: 12px 7px
+	position: absolute
+	top: 21px
+	left: 0
+	width: 250px
+	height: 150px
+	+box
+	border: 1px solid #ebdcb6
+	overflow: auto
+	z-index: 999
+	background: #fff  
+.search__item
+	+clr
+	margin-bottom: 10px 
+.search__dropdown-left
+	float: left
+	a
+		color: #999
+		font-size: 16px
+		&:hover
+			color: #000
+.search__dropdown-right 
+	float: right
+	a
+		color: #999
+		font-size: 12px
+		&:hover
+			color: #000
 
 // h1-h6
 .h2

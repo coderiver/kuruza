@@ -6,10 +6,13 @@
 	<title>home</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.jscrollpane.css" >
 	<link href='http://fonts.googleapis.com/css?family=Tinos&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/cycle.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jquery.jscrollpane.js"></script>
 	<script src="http://desandro.github.io/masonry/jquery.masonry.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
@@ -136,8 +139,42 @@
 						<a class="menu-link" href="#">MBFW</a>
 					</li>
 				</ul>
-				<div class="search">
+				<div class="search is-active">
 					<input type="text" placeholder="гид, мода, наряды"><span><i></i></span>
+					<div class="search__dropdown scroll-pane">
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид</a></div>
+								<div class="search__dropdown-right"><a href="#">style</a></div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид по</a></div>
+								<div class="search__dropdown-right"><a href="#">style</a></div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид по модам</a></div>
+								<div class="search__dropdown-right"><a href="#">event</a></div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид по платьям</a></div>
+								<div class="search__dropdown-right"><a href="#">beauty</a></div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид</a></div>
+								<div class="search__dropdown-right"><a href="#">style</a></div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид по</a></div>
+								<div class="search__dropdown-right"><a href="#">style</a></div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид по модам</a></div>
+							<div class="search__dropdown-right"><a href="#">event</a>	</div>
+							</div>
+							<div class="search__item">
+								<div class="search__dropdown-left"><a href="#">Гид по платьям</a></div>
+								<div class="search__dropdown-right"><a href="#">beauty</a></div>
+							</div>
+					</div>
 				</div>
 			</nav>
 			<!-- END navigation -->
