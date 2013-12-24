@@ -71,11 +71,19 @@ $gold: #e1c88c
 	z-index: 2
 .logo_footer
 	float: left
-	margin-right: 21px 	 	
+	margin-right: 21px
 .topper
 	position: relative
 	height: 87px 
-	padding-top: 48px 
+	padding-top: 48px
+	background: #FFF
+.topper.fixed
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 9999
+	+box-shadow(0 -5px 15px 13px #fff)	 
 // nav
 .nav
 	position: relative

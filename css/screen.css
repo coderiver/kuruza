@@ -37,7 +37,9 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .logo_footer { float: left; margin-right: 21px; }
 
-.topper { position: relative; height: 87px; padding-top: 48px; }
+.topper { position: relative; height: 87px; padding-top: 48px; background: white; }
+
+.topper.fixed { position: fixed; top: 0; left: 0; right: 0; z-index: 9999; -webkit-box-shadow: 0 -5px 15px 13px white; -moz-box-shadow: 0 -5px 15px 13px white; box-shadow: 0 -5px 15px 13px white; }
 
 .nav { position: relative; text-align: center; height: 68px; margin-bottom: 28px; }
 

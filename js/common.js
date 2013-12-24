@@ -40,4 +40,28 @@ $(document).ready(function() {
         jQuery('.scroll-pane').jScrollPane();
     });
 
+    // sticky top-menu
+
+    function menu_scroll() {
+    	var position = $(".topper").offset().top;
+    	var	position_off = $(".topper-wrap").offset().top;
+
+    	if ($(window).scrollTop() >= position) {
+    		$(".topper").addClass('fixed');
+    	}
+    	if ($(window).scrollTop() <= position_off){
+    		$(".topper").removeClass('fixed');
+    	}
+    	else {}
+    } 
+     
+    menu_scroll();
+
+    $(window).scroll(function(){
+      	menu_scroll();
+    });
+    $(window).resize(function(){
+    	menu_scroll();
+    });
+
 });
