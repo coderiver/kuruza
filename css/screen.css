@@ -167,6 +167,11 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .divide:before { content: ""; position: absolute; left: 100%; top: 2px; height: 1px; width: 3000px; background: white; }
 .divide:after { content: ""; position: absolute; right: 100%; top: 2px; height: 1px; width: 3000px; background: white; }
 
+.inner-menu { margin: 28px 0 31px; text-align: center; }
+
+.inner-menu__item { display: inline-block; margin: 0 38px; }
+.inner-menu__item .h5 { padding: 0 5px; }
+
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
@@ -448,6 +453,5 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .contacts__right { float: right; width: 168px; text-align: left; }
 
-.category-menu { margin: 28px 0 31px; text-align: center; }
-.category-menu li { display: inline-block; margin: 0 26px; }
-.category-menu li .h5 { padding: 0 5px; }
+.fashion-slider { position: relative; width: 966px; margin: 0 auto; }
+.fashion-slider .example-pager { top: 20px; right: 20px; }
