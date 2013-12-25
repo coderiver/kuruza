@@ -110,6 +110,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .h4 { font-weight: bold; font-size: 26px; color: black; }
 
 .h5 { font-weight: bold; font-size: 16px; color: black; }
+.h5 a { color: black; }
 
 .h_lines { border-top: 2px solid #e1c88c; border-bottom: 2px solid #e1c88c; text-transform: uppercase; }
 
@@ -446,3 +447,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .contacts__left { float: left; width: 110px; text-align: right; color: #8c8c8c; }
 
 .contacts__right { float: right; width: 168px; text-align: left; }
+
+.category-menu { margin: 28px 0 31px; text-align: center; }
+.category-menu li { display: inline-block; margin: 0 26px; }
+.category-menu li .h5 { padding: 0 5px; }
