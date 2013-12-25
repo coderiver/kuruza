@@ -36,9 +36,10 @@ $(document).ready(function() {
 
 	// scroll pane
 
-	jQuery(function(){
-        jQuery('.scroll-pane').jScrollPane();
-    });
+	if ($(".search__dropdown").length >0 ){
+        $('.scroll-pane').jScrollPane();
+    } 
+	
 
     // sticky top-menu
 
@@ -54,14 +55,21 @@ $(document).ready(function() {
     	}
     	else {}
     } 
-     
-    menu_scroll();
+    
+    if ($(".topper-wrap").length >0 ){
+    	menu_scroll();
+    } 
+    
 
     $(window).scroll(function(){
-      	menu_scroll();
+      	if ($(".topper-wrap").length >0 ){
+    		menu_scroll();
+    	}
     });
     $(window).resize(function(){
-    	menu_scroll();
+    	if ($(".topper-wrap").length >0 ){
+    		menu_scroll();
+    	}
     });
 
 });
