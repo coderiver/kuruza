@@ -56,7 +56,9 @@ $gold: #e1c88c
 	+clr		
 // header
 .header
-	padding-top: 35px 	
+	padding-top: 35px
+.header_mod
+	padding-top: 0	 	
 .logo
 	margin-bottom: 50px 
 	text-align: center
@@ -349,6 +351,19 @@ $gold: #e1c88c
 		top: 14px
 		left: -50px
 		+s(pugupugu)
+.sticky-footer
+	.out
+		min-height: 100%
+		height: auto !important
+		height: 100%
+		margin-bottom: -46px
+	.footer
+		position: relative
+		height: 46px
+		z-index: 10
+	.push
+		height: 106px 		
+
 // socials
 .socials
 	float: right
@@ -382,6 +397,37 @@ $gold: #e1c88c
 	+s(yt)
 	&:hover
 		+s(yt-hover)
+
+// divide line
+.divide
+	position: relative
+	width: 21px 
+	height: 12px
+	margin: 0 auto
+	i
+		display: block
+		margin: 0 auto 
+		width: 6px
+		height: 6px
+		background: #fff
+		+rotate(-45)
+	&:before
+		content: ""
+		position: absolute
+		left: 100%
+		top: 2px
+		height: 1px
+		width: 3000px 
+		background: #fff
+	&:after
+		content: ""
+		position: absolute
+		right: 100%
+		top: 2px
+		height: 1px
+		width: 3000px 
+		background: #fff	
+			
 
 
 			 				

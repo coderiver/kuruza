@@ -1,1 +1,66 @@
-
+.about-us
+    .h2
+        width: 936px
+        margin: 0 auto 60px 
+.about-us__inner
+    +clr
+    width: 976px 
+    margin: 0 auto 
+.about-us__block
+    position: relative
+    width: 486px
+    min-height: 486px 
+    float: left
+    padding: 130px 94px 20px
+    +box 
+    margin-left: 4px
+    background: #f0e3c5 
+    &:hover
+        .about-us__hover
+            +opacity(0)
+            z-index: -1
+    &:first-child
+        margin-left: 0        
+.about-us__hover
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: $gold
+    text-align: center
+    +transition(all 400ms)
+    z-index: 2
+    +opacity(1)
+    padding-top: 200px 
+    text-transform: uppercase
+    font-size: 37px
+    font-weight: bold               
+.about-us__content
+    overflow: hidden   
+.about-us__title
+    display: block
+    color: #000
+    font-size: 21px
+    font-weight: bold
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 35px
+.about-us__text
+    padding-top: 20px 
+    text-align: center
+.contacts
+    padding-top: 20px
+    li
+        +clr
+    a
+        color: #000    
+.contacts__left
+    float: left
+    width: 110px
+    text-align: right
+    color: #8c8c8c
+.contacts__right
+    float: right
+    width: 168px 
+    text-align: left                      

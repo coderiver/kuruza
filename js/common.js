@@ -44,30 +44,30 @@ $(document).ready(function() {
     // sticky top-menu
 
     function menu_scroll() {
-    	var position = $(".topper").offset().top;
+    	var position = $(".js-topper").offset().top;
     	var	position_off = $(".topper-wrap").offset().top;
 
     	if ($(window).scrollTop() >= position) {
-    		$(".topper").addClass('fixed');
+    		$(".js-topper").addClass('fixed');
     	}
     	if ($(window).scrollTop() <= position_off){
-    		$(".topper").removeClass('fixed');
+    		$(".js-topper").removeClass('fixed');
     	}
     	else {}
     } 
     
-    if ($(".topper-wrap").length >0 ){
+    if ($(".js-topper-wrap").length >0 ){
     	menu_scroll();
     } 
     
 
     $(window).scroll(function(){
-      	if ($(".topper-wrap").length >0 ){
+      	if ($(".js-topper-wrap").length >0 ){
     		menu_scroll();
     	}
     });
     $(window).resize(function(){
-    	if ($(".topper-wrap").length >0 ){
+    	if ($(".js-topper-wrap").length >0 ){
     		menu_scroll();
     	}
     });
