@@ -398,6 +398,8 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .jspVerticalBar { position: absolute; top: 0; right: 0; width: 6px; height: 100%; background: #efe2c5; }
 
+.fashion .jspVerticalBar { width: 4px; right: 5px; }
+
 .jspHorizontalBar { position: absolute; bottom: 0; left: 0; width: 100%; height: 16px; background: red; }
 
 .jspVerticalBar *, .jspHorizontalBar * { margin: 0; padding: 0; }
@@ -408,7 +410,11 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .jspTrack { background: #efe2c5; position: relative; }
 
+.fashion .jspTrack { background: #f7f7f7; height: 500px; }
+
 .jspDrag { background: #e0c78b; position: relative; top: 0; left: 0; cursor: pointer; }
+
+.fashion .jspDrag { background: #cccccc; }
 
 .jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag { float: left; height: 100%; }
 
@@ -453,5 +459,20 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .contacts__right { float: right; width: 168px; text-align: left; }
 
-.fashion-slider { position: relative; width: 966px; margin: 0 auto; }
+.fashion-guide { width: 966px; margin: 0 auto; }
+.fashion-guide .h2 { width: 96%; margin: 0 auto; }
+
+.fashion-slider { position: relative; width: 966px; height: 518px; }
 .fashion-slider .example-pager { top: 20px; right: 20px; }
+
+.fashion { *zoom: 1; }
+.fashion:after { content: " "; display: table; clear: both; }
+
+.l-fashion__sidebar { float: left; padding: 7px 0; border: 2px solid #f7f7f7; }
+
+.fashion__sidebar { width: 158px; height: 504px; overflow: auto; padding: 5px 5px 5px 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.fashion-list li a { position: relative; color: #bfbfbf; }
+.fashion-list li a:hover { color: black; padding-left: 9px; }
+.fashion-list li a:hover:after { content: ""; position: absolute; top: 5px; left: 0px; width: 5px; height: 5px; background: #e1c88c; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+.fashion-list li:first-child:first-letter { font-weight: bold; color: black; text-transform: uppercase; }

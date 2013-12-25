@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 	// scroll pane
 
-	if ($(".search__dropdown").length >0 ){
+	if ($(".scroll-pane").length >0 ){
         $('.scroll-pane').jScrollPane();
     } 
 	
