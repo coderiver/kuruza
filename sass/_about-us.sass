@@ -30,12 +30,20 @@
     background: $gold
     text-align: center
     +transition(all 400ms)
+    +gpu
     z-index: 2
-    +opacity(1)
-    padding-top: 200px 
+    +opacity(1) 
     text-transform: uppercase
     font-size: 37px
-    font-weight: bold               
+    font-weight: bold
+    span
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        +transition(all 300ms)
+        margin-top: -25px 
+        text-align: center               
 .about-us__content
     overflow: hidden   
 .about-us__title
