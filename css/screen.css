@@ -172,6 +172,8 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .inner-menu__item { display: inline-block; margin: 0 38px; }
 .inner-menu__item .h5 { padding: 0 5px; }
 
+.scroll-pane { outline: none; }
+
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
@@ -468,11 +470,21 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .fashion { *zoom: 1; }
 .fashion:after { content: " "; display: table; clear: both; }
 
-.l-fashion__sidebar { float: left; padding: 7px 0; border: 2px solid #f7f7f7; }
+.l-fashion__sidebar, .l-fashion__content { float: left; padding: 7px 0; border: 2px solid #f7f7f7; }
 
 .fashion__sidebar { width: 158px; height: 504px; overflow: auto; padding: 5px 5px 5px 15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.l-fashion__content { float: right; }
 
 .fashion-list li a { position: relative; color: #bfbfbf; }
 .fashion-list li a:hover { color: black; padding-left: 9px; }
 .fashion-list li a:hover:after { content: ""; position: absolute; top: 5px; left: 0px; width: 5px; height: 5px; background: #e1c88c; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
 .fashion-list li:first-child:first-letter { font-weight: bold; color: black; text-transform: uppercase; }
+
+.fashion__content { width: 730px; height: 504px; overflow: auto; padding: 17px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.fashion__header-list { font-size: 0; margin-bottom: 40px; }
+.fashion__header-list li { display: inline-block; width: 25%; vertical-align: top; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 5%; font-size: 13px; font-weight: bold; }
+.fashion__header-list li p:first-child { padding-top: 7px; }
+
+.fashion__about p, .fashion__about img { margin-bottom: 22px; }

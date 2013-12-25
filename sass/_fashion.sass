@@ -13,7 +13,7 @@
         right: 20px
 .fashion
     +clr
-.l-fashion__sidebar
+.l-fashion__sidebar, .l-fashion__content
     float: left
     padding: 7px 0
     border: 2px solid #f7f7f7               
@@ -23,6 +23,8 @@
     overflow: auto 
     padding: 5px 5px 5px 15px
     +box
+.l-fashion__content
+    float: right
 .fashion-list
     li
         a
@@ -44,4 +46,28 @@
             &:first-letter
                 font-weight: bold
                 color: #000
-                text-transform: uppercase            
+                text-transform: uppercase
+.fashion__content
+    width: 730px
+    height: 504px
+    overflow: auto 
+    padding: 17px
+    +box
+.fashion__header-list
+    font-size: 0
+    margin-bottom: 40px
+    li
+        display: inline-block
+        width: 25%
+        vertical-align: top
+        +box
+        padding-left: 5% 
+        font-size: 13px
+        font-weight: bold
+        p
+            &:first-child
+                padding-top: 7px
+.fashion__about
+    p, img
+        margin-bottom: 22px
+                                                              
