@@ -51,6 +51,12 @@
     margin: 0 auto
     p
         margin-bottom: 25px
+    a
+        font-size: 16px
+        color: #000
+        &:hover
+            text-decoration: underline
+            color: $gold    
 .article__author
     position: absolute
     top: 32px
@@ -128,5 +134,97 @@
         width: 120px
         li
             margin-bottom: 10px                
+.quote-wrap
+    margin-bottom: 45px
+    overflow: hidden
+.qoute__img
+    width: 165px
+    height: 165px  
+    margin: 0 auto 8px
+    img
+        width: 100%
+        height: 100%
+        +border-radius(50%)
+.quote__author
+    text-align: center
+    margin-bottom: 25px
+    div
+        font-size: 26px
+        font-weight: bold
+    span
+        color: #767676
+        line-height: 1        
+.qoute
+    width: 80%
+    margin: 0 auto
+    padding: 15px 0 
+    text-align: center
+    font-weight: bold
+    font-style: italic
 
-    
+// table              
+.article__table
+    margin-bottom: 35px 
+    thead 
+        font-weight: bold
+        font-size: 21px
+        div
+            margin-bottom: 18px
+            border-bottom: 2px solid $gold
+    p
+        margin-bottom: 0
+    tbody
+        tr
+            div
+                padding: 3px 0 
+                border-top: 2px solid #e6e6e6
+            &:first-child
+                div
+                    border-top: none
+
+// list
+.article__list
+    margin-bottom: 25px 
+.article__list-row
+    +clr
+    padding: 27px 0
+    border-top: 1px dashed $gold
+    &:first-child
+        border-top: none 
+    li
+        position: relative
+        width: 33%
+        float: left
+        +box
+        padding: 0 20px 0 70px
+        &:before
+            content: ""
+            position: absolute
+            top: 7px
+            left: 14px
+            width: 31px
+            height: 31px
+            +border-radius(50%) 
+    li.green
+        &:before
+            background: #59ac88
+    li.red
+        &:before
+            background: #cf676b
+    li.blue
+        &:before
+            background: #a2d3f6                                                                     
+.article__list-title
+    font-size: 18px
+    font-weight: bold
+    margin-bottom: 14px
+.article__list-text
+    font-size: 14px
+    line-height: 1.2
+
+// interview              
+.interview
+    padding-left: 22px 
+.interview__question
+    position: relative
+    padding-left: 45px     
