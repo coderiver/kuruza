@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// masonry bricks
 
 	$('.masonry').masonry({
-	  	columnWidth: 360,
+	  	columnWidth: 361,
 	  	gutter: 10,
 	  	itemSelector: '.post',
 	  	stamp: '.sidebar'
