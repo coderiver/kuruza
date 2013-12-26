@@ -548,6 +548,12 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .article__head_mod1 img { position: relative; z-index: 2; float: right; }
 .article__head_mod1 .article__subtitle { position: absolute; top: 100px; left: 0; }
 
+.article__head_mod2 { text-align: left; margin-bottom: 44px; }
+.article__head_mod2 img { position: relative; margin-bottom: 20px; z-index: 1; }
+.article__head_mod2 .h1 { position: absolute; top: 120px; right: 0; width: 400px; font-size: 61px; z-index: 2; }
+.article__head_mod2 .h1 span { color: #ffc866; }
+.article__head_mod2 .article__subtitle { font-size: 32px; }
+
 .article__subtitle { position: relative; font-size: 25px; line-height: 1; margin-bottom: 36px; z-index: 2; }
 
 .article__info-list { margin-bottom: 20px; }
