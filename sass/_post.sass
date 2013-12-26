@@ -1,0 +1,132 @@
+.post-slider
+    position: relative
+    margin-bottom: 34px 
+    .cycle-prev
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        width: 50%
+        z-index: 101
+        cursor: pointer
+        +transition(all 300ms)
+        +opacity(0)
+        &:hover
+            +opacity(1)
+        i
+            position: absolute
+            top: 50%
+            left: 10%
+            margin-top: -33px 
+            +s(cycle-prev)
+    .cycle-next
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        width: 50%
+        z-index: 101
+        cursor: pointer
+        +transition(all 300ms)
+        +opacity(0)
+        &:hover
+            +opacity(1)
+        i
+            position: absolute
+            top: 50%
+            right: 10%
+            margin-top: -34px
+            +s(cycle-next)    
+.post-slider__item
+    width: 100%
+    height: 495px
+    overflow: hidden
+    img
+        width: 100%
+        min-height: 495px
+        height: auto
+.article
+    position: relative
+    width: 745px
+    margin: 0 auto
+    p
+        margin-bottom: 25px
+.article__author
+    position: absolute
+    top: 32px
+    right: -150px
+    width: 125px
+    height: 125px
+    padding: 2px
+    +border-radius(50%)
+    +box
+    background: $gold 
+    img
+        width: 121px
+        height: 121px
+        +border-radius(50%)
+    p
+        font-weight: bold
+        font-style: italic
+        text-align: center
+        font-size: 17px 
+.article__info
+    position: absolute
+    top: 32px
+    right: 778px
+    width: 2000px
+    text-align: right 
+.article__info-rubric
+    height: 42px 
+    line-height: 42px
+    padding-right: 6px
+    margin-bottom: 27px  
+    background: $gold
+    font-size: 32px
+    font-weight: bold
+    font-style: italic
+    color: #fff  
+.article__subtitle
+    text-align: center
+    font-size: 25px
+    line-height: 1
+    margin-bottom: 36px
+.article__info-list
+    margin-bottom: 20px
+    li
+        position: relative
+        margin-bottom: 5px 
+        padding-right: 37px
+        font-size: 13px
+        color: #808080
+.article__view
+    &:before
+        content: ""
+        position: absolute
+        top: 0px
+        right: 0px
+        +s(eye)
+.article__comment
+    &:before
+        content: ""
+        position: absolute
+        top: 0px
+        right: 1px
+        +s(bubble)
+.article__date
+    &:before
+        content: ""
+        position: absolute
+        top: 0px
+        right: 3px
+        +s(date)                         
+.article__share
+    color: #808080
+    p
+        margin-bottom: 10px
+    .socials
+        width: 120px
+        li
+            margin-bottom: 10px                
+
+    
