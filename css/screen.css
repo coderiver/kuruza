@@ -104,7 +104,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .search__dropdown-right a { color: #999999; font-size: 12px; }
 .search__dropdown-right a:hover { color: black; }
 
-.h1 { text-align: center; font-weight: bold; font-size: 60px; }
+.h1 { position: relative; font-weight: bold; font-size: 60px; z-index: 2; }
 
 .h2 { text-align: center; font-weight: bold; font-size: 42px; }
 
@@ -541,7 +541,14 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 
 .article__info-rubric { height: 42px; line-height: 42px; padding-right: 6px; margin-bottom: 27px; background: #e1c88c; font-size: 32px; font-weight: bold; font-style: italic; color: white; }
 
-.article__subtitle { text-align: center; font-size: 25px; line-height: 1; margin-bottom: 36px; }
+.article__head { text-align: center; }
+
+.article__head_mod1 { *zoom: 1; text-align: left; margin-bottom: 44px; }
+.article__head_mod1:after { content: " "; display: table; clear: both; }
+.article__head_mod1 img { position: relative; z-index: 2; float: right; }
+.article__head_mod1 .article__subtitle { position: absolute; top: 100px; left: 0; }
+
+.article__subtitle { position: relative; font-size: 25px; line-height: 1; margin-bottom: 36px; z-index: 2; }
 
 .article__info-list { margin-bottom: 20px; }
 .article__info-list li { position: relative; margin-bottom: 5px; padding-right: 37px; font-size: 13px; color: gray; }
