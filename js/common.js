@@ -24,16 +24,15 @@ $(document).ready(function() {
 
 	// search
 	
-	$(".search").hover(
-		function(){
-			$(this).addClass('is-active');
-			$(this).parent().find(".menu__item").css('margin', '0 23px');
-		},
-		function(){
-			$(this).removeClass('is-active');
-			$(this).parent().find(".menu__item").css('margin', '0 38px')
-		}
-	);
+
+	$(".search input").focus(function() {
+		$(this).addClass('is-active');
+		$(this).parents('nav').find(".menu__item").css('margin', '0 23px');
+	});
+	$(".search input").blur(function(){
+		$(this).removeClass('is-active');
+		$(this).parents('nav').find(".menu__item").css('margin', '0 38px');
+	});
 
 	// scroll pane
 
