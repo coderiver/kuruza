@@ -16,8 +16,8 @@ $(document).ready(function() {
 	// masonry bricks
 
 	$('.masonry').masonry({
-	  	columnWidth: 361,
-	  	gutter: 10,
+	  	columnWidth: 346,
+	  	gutter: 21,
 	  	itemSelector: '.post',
 	  	stamp: '.sidebar'
 	});

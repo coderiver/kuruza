@@ -247,7 +247,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .rubric a { color: black; }
 .rubric a:hover { font-weight: bold; }
 
-.sidebar { float: right; width: 345px; margin-left: 23px; border: 1px solid white; }
+.sidebar { float: right; width: 345px; border: 1px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .sidebar img { width: 345px; height: auto; }
 
 .bot-menu { margin-bottom: 120px; }
@@ -269,7 +269,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .popular__item { *zoom: 1; }
 .popular__item:after { content: " "; display: table; clear: both; }
 
-.popular__left { float: left; width: 112px; margin-right: 21px; }
+.popular__left { float: left; width: 112px; }
 
 .popular__img img { width: 100%; height: auto; }
 
@@ -316,7 +316,7 @@ body { min-width: 1080px; font-size: 16px; font-family: "Tinos", serif; line-hei
 .calendar__inner { position: relative; border: 2px solid #e1c88c; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .calendar__img { font-size: 0; display: block; }
-.calendar__img img { width: 341px; }
+.calendar__img img { width: 100%; height: auto; }
 
 .event-content { position: relative; }
 
