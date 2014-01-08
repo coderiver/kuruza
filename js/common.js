@@ -27,11 +27,13 @@ $(document).ready(function() {
 
 	$(".search input").focus(function() {
 		$(this).addClass('is-active');
-		$(this).parents('nav').find(".menu__item").css('margin', '0 23px');
+		//$(this).parents('nav').find(".menu__item").css('margin', '0 23px');
+		$(this).parents('nav').find(".menu__item").addClass('narrow');
 	});
 	$(".search input").blur(function(){
 		$(this).removeClass('is-active');
-		$(this).parents('nav').find(".menu__item").css('margin', '0 38px');
+		//$(this).parents('nav').find(".menu__item").css('margin', '0 38px');
+		$(this).parents('nav').find(".menu__item").removeClass('narrow');
 	});
 
 	// scroll pane
