@@ -106,17 +106,27 @@
 		
 // masonry blocks
 .post
-	width: 346px
+	width: 33.333%
 	margin-bottom: 75px
+	padding: 0 0.938em
+	+box
+	+r(tablet)
+		width: 50%
+	+r(phone_wide)
+		width: 100% 	 	
+.post__inner
 	border: 1px solid #fff
 	+box
 	&:hover
-		border: 1px solid #d8d8d8
+		border: 1px solid #d8d8d8		
 .post__img
 	display: block
 	font-size: 0
+	img
+		width: 100%
+		height: auto  
 .post__content
-	padding: 20px 24px 	 	
+	padding: 20px 5px 	 	
 .post__info
 	+clr
 	font-weight: bold
@@ -128,23 +138,35 @@
 .post__date
 	float: right
 	font-size: 17px
-	color: #b2b2b2 			
+	color: #b2b2b2
+.post__title
+	.h3
+		+r(tablet)
+			line-height: 1
+		+r(tablet_small)
+			a
+				font-size: 30px		 			
 .post__sub-title
 	font-weight: bold
 	font-size: 23px
 	color: #000
-	line-height: 1 
+	line-height: 1
+	+r(tablet_small)
+		font-size: 18px  
 .add-post
 	position: relative
 	display: block
-	width: 346px
-	height: 566px  
+.add-post__inner
+	height: 566px
+	+box  
 	border: 2px solid #e1c78b
+	+r(tablet)
+		height: 467px
 	&:hover
-		border: 2px solid #e1c78b
+		border: 2px solid #e1c78b		 	
 .add-post__arrow
 	position: absolute
-	top: 103px
+	top: 65px
 	left: 50%
 	margin-left: -76px
 	width: 142px
@@ -159,7 +181,7 @@
 		+s(arr-down)
 .add-post__text
 	position: absolute
-	bottom: 90px
+	bottom: 40px
 	left: 50%
 	width: 250px
 	margin-left: -125px  
@@ -178,6 +200,7 @@
 	font-size: 21px
 	img
 		width: 100%
+		height: auto 
 		margin-bottom: 18px  
 		+box
 		border: 1px solid rgba(153,122,72,.1)
@@ -187,13 +210,24 @@
 			font-weight: bold
 	
 // sidebar
+
 .sidebar
 	float: right
-	width: 345px
+	width: 32%
+	background: #FFF 
+	+r(ipad_wide)
+		position: relative
+		right: -500px
+		+transition(all 400ms)
+	+r(tablet)
+		width: 50%
+	+r(phone_wide)	 	 
+		width: 100% 
 	img
-		width: 345px
+		width: 100%
 		height: auto
-		
+.sidebar.is-open
+	right: 0 		
 // footer bot menu
 .bot-menu
 	margin-bottom: 120px 				 
@@ -226,24 +260,38 @@
 	font-weight: bold
 	font-size: 35px
 	+transition(background 300ms)
+	+r(tablet_small)
+		font-size: 25px
+	+r(phone_wide)
+		font-size: 35px	
 	&:hover
 		background: $gold 
 .popular-list
 	padding-top: 32px 
 .popular__item
-	+clr	 
+	+clr
+	+r(tablet_wide)
+		margin-bottom: 15px
 .popular__left
 	float: left
-	width: 112px
+	max-width: 112px
+	+r(ipad)
+		float: none
+		display: inline-block
 .popular__img
 	img
 		width: 100%
 		height: auto
 .popular__right
 	float: right
-	width: 212px
+	width: 58%
 	padding-top: 18px 
 	text-align: left
+	+r(tablet_wide)
+		float: none
+		width: 100%
+		padding-top: 0
+		text-align: center	 
 .popular__type
 	margin-bottom: 5px 
 	color: #c5c5c5
@@ -262,11 +310,21 @@
 	+clr
 .horoscope__img
 	float: left
+	+r(tablet_wide)
+		float: none
+	+r(tablet)
+		float: left
+	+r(tablet_small)
+		float: none
+	+r(phone_wide)
+		float: left		
 	img
 		width: auto
 .horoscope__info
 	font-size: 10px
-	padding-top: 12px  		
+	padding-top: 12px
+	+r(tablet_wide)
+		padding-top: 0  		
 .horoscope__title
 	font-size: 18px
 .horoscope__recommend
@@ -275,6 +333,8 @@
 	font-size: 25px
 	line-height: 1 
 	text-align: left
+	+r(tablet_wide)
+		font-size: 18px
 .hit__img 
 	display: block
 	font-size: 0

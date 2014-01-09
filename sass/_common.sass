@@ -54,7 +54,9 @@ $gold: #e1c88c
 	max-width: 1080px
 	margin: 0 auto
 .wrapper
-	+clr		
+	+clr
+.container
+	overflow: hidden			
 // header
 .header
 	padding-top: 35px
@@ -69,7 +71,11 @@ $gold: #e1c88c
 		margin-bottom: 10px 
 	a
 		display: block 
-		font-size: 0 
+		font-size: 0
+		+r(tablet_small)
+			padding: 0 10px
+			img
+				width: 100%  
 .logo_small
 	position: absolute
 	top: 19px
@@ -123,7 +129,7 @@ $gold: #e1c88c
 	display: none
 	position: absolute
 	top: -28px
-	left: 5px
+	left: 15px
 	width: 75px
 	height: 75px  
 	cursor: pointer
@@ -246,6 +252,21 @@ $gold: #e1c88c
 	visibility: visible
 	display: block
 	padding-top: 15px 
+.sidebar-btn
+	display: none
+	position: absolute
+	bottom: -42px
+	right: 32px
+	width: 32px
+	height: 32px
+	cursor: pointer
+	+r(ipad_wide)
+		display: block
+	+r(tablet)
+		bottom: -70px	
+	i
+		display: block
+		+s(plus)
 
 // animated link
 .a-link
@@ -268,7 +289,7 @@ $gold: #e1c88c
 .search
 	position: absolute
 	top: 0
-	right: 5px
+	right: 15px
 	height: 24px
 	+box
 	text-align: left
