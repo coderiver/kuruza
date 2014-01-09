@@ -76,17 +76,29 @@ $gold: #e1c88c
 	float: left
 	margin-right: 21px
 .topper-wrap
-	height: 135px
+	.nav
+		margin-bottom: 0
+		height: auto
+	.nav.is-open
+		padding-top: 60px
+		padding-bottom: 10px	 
 	.menu
 		+r(tablet)
-			display: none
+			display: none	
+	.menu.is-active
+		display: inline-block			
 	.logo_small
 		+r(tablet)
 			left: 50%
-			margin-left: -37px			
+			margin-left: -37px
+		+r(phone_wide)
+			+transition(all 400ms)
+	.logo_small.is-hidden
+		+r(phone_wide)
+			+opacity(0)
 .topper
 	position: relative
-	height: 87px 
+	min-height: 87px 
 	padding-top: 48px
 	background: #FFF
 .topper.fixed
@@ -103,6 +115,22 @@ $gold: #e1c88c
 	text-align: center
 	height: 68px
 	margin-bottom: 28px
+.drop-menu
+	display: none
+	position: absolute
+	top: -28px
+	left: 5px
+	width: 75px
+	height: 75px  
+	cursor: pointer
+	z-index: 9999
+	+r(tablet) 
+		display: block
+	i
+		position: absolute
+		top: 21px
+		left: 0px	
+		+s(drop-menu)	 	
 .nav-top
 	+r(tablet)
 		display: none	  
@@ -120,7 +148,10 @@ $gold: #e1c88c
 	+r(ipad_wide)
 		margin: 0 22px
 	+r(tablet_wide)
-		margin: 0 18px		
+		margin: 0 18px
+	+r(tablet) 
+		float: none
+		margin: 0 18px 5px 			
 .menu__item.narrow
 	margin: 0 23px
 	+r(desktop)
@@ -128,7 +159,9 @@ $gold: #e1c88c
 	+r(ipad_wide)
 		margin: 0 17px
 	+r(tablet_wide)
-		margin: 0 15px			 
+		margin: 0 15px
+	+r(tablet) 
+		margin: 0 15px 5px 				 
 .menu-link
 	position: relative
 	font-weight: bold
@@ -136,6 +169,8 @@ $gold: #e1c88c
 	text-transform: uppercase
 	+r(tablet_wide)
 		font-size: 13px
+	+r(tablet)
+		font-size: 16px
 	&:before
 		content: ""
 		position: absolute
@@ -182,6 +217,13 @@ $gold: #e1c88c
 	visibility: hidden
 	+clr
 	+gpu
+	+r(tablet)
+		display: none
+		position: relative
+		left: auto
+		width: auto
+		margin-left: 0
+		padding-top: 0   
 	li
 		display: inline-block
 		height: 22px 
@@ -189,7 +231,7 @@ $gold: #e1c88c
 		+r(ipad_wide)
 			margin: 0 28px
 		+r(tablet_wide)
-			margin: 0 20px	
+			margin: 0 20px		
 		a
 			text-transform: none
 			font-weight: normal
@@ -198,6 +240,8 @@ $gold: #e1c88c
 .sub-menu.is-active
 	+opacity(1)
 	visibility: visible
+	display: block
+	padding-top: 15px 
 
 // animated link
 .a-link

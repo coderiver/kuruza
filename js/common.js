@@ -13,6 +13,28 @@ $(document).ready(function() {
 		}
 	);
 
+	// menu dropdown
+    
+    var drop = $(".drop-menu");
+	
+    function drop_menu(){
+		drop.click(function(){
+			$(this).next(".nav .menu").toggleClass("is-active");
+			$(this).parent(".nav").toggleClass("is-open");
+		});	
+	}
+	
+	drop_menu();
+	
+    function drop_reset(){
+       if($(window).width() >= 800){
+            drop.next(".menu").removeClass("is-active");
+            drop.parent().removeClass("is-open");
+        } 
+    }
+    
+    drop_reset();
+
 	// masonry bricks
 
 	$('.masonry').masonry({
@@ -27,13 +49,13 @@ $(document).ready(function() {
 
 	$(".search input").focus(function() {
 		$(this).addClass('is-active');
-		//$(this).parents('nav').find(".menu__item").css('margin', '0 23px');
 		$(this).parents('nav').find(".menu__item").addClass('narrow');
+        $(".js-logo-opacity").addClass('is-hidden');
 	});
 	$(".search input").blur(function(){
 		$(this).removeClass('is-active');
-		//$(this).parents('nav').find(".menu__item").css('margin', '0 38px');
 		$(this).parents('nav').find(".menu__item").removeClass('narrow');
+        $(".js-logo-opacity").removeClass('is-hidden');
 	});
 
 	// scroll pane
@@ -120,6 +142,7 @@ $(document).ready(function() {
     		author_scroll();
     		info_scroll();
     	}
+        drop_reset();
     });
 
 });

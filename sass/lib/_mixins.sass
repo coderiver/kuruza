@@ -1,5 +1,6 @@
 // responsive example, edit or remove
 
+$phone_wide: 480px
 $ipad: 768px
 $tablet: 800px
 $tablet_wide: 900px
@@ -8,6 +9,10 @@ $desktop: 1080px
 $breaklarge: 1180px
 
 =r($media)
+	@if $media == phone_wide
+		// narrower than $width
+		@media only screen and (max-width: $phone_wide)
+			@content
 	@if $media == ipad
 		// narrower than $width
 		@media only screen and (max-width: $ipad)
