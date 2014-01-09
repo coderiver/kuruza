@@ -58,11 +58,15 @@ $gold: #e1c88c
 // header
 .header
 	padding-top: 35px
+	+r(tablet)
+		padding-top: 10px 
 .header_mod
 	padding-top: 0	 	
 .logo
 	margin-bottom: 50px 
 	text-align: center
+	+r(tablet)
+		margin-bottom: 10px 
 	a
 		display: block 
 		font-size: 0 
@@ -268,19 +272,21 @@ $gold: #e1c88c
 	height: 24px
 	+box
 	text-align: left
-	span
-		display: inline-block
+	button[type="submit"]
+		position: absolute
+		top: 0px
+		right: 0px
 		height: 22px
 		width: 22px
 		background: #e0c78b 
 	i
 		position: relative
-		top: 3px
-		left: 4px
+		top: 2px
+		left: 0px
 		display: inline-block
 		+s(search)	 
 	input
-		width: 67px
+		width: 89px
 		height: 22px
 		padding: 0 9px
 		border: 1px solid $gold

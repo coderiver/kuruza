@@ -11,7 +11,9 @@
 	+r(desktop)
 		height: 477px
 	+r(tablet_wide)
-		height: 377px	
+		height: 377px
+	+r(phone_wide)
+		height: 277px 		
 	img
 		width: 100%
 		min-height: 577px
@@ -19,7 +21,9 @@
 		+r(desktop)
 			min-height: 477px
 		+r(tablet_wide)
-			min-height: 377px	  
+			min-height: 377px
+		+r(phone_wide)
+			min-height: 277px		  
 .header-slider__title
 	position: absolute
 	bottom: 25px
@@ -37,7 +41,10 @@
 		line-height: 190px
 	+r(tablet_wide)
 		font-size: 160px
-		line-height: 160px	
+		line-height: 160px
+	+r(phone_wide)
+		font-size: 100px
+		line-height: 100px		
 	span
 		position: absolute
 		top: 18px
@@ -52,7 +59,12 @@
 			right: -150px
 			width: 130px
 			font-size: 41px
-			line-height: 41px		
+			line-height: 41px
+		+r(phone_wide)
+			right: -78px
+			width: 65px
+			font-size: 22px
+			line-height: 22px		
 .header-slider__name
 	font-size: 60px
 	line-height: 60px
@@ -61,13 +73,23 @@
 		line-height: 50px
 	+r(tablet_wide)
 		font-size: 40px
-		line-height: 40px	
+		line-height: 40px
+	+r(phone_wide)
+		font-size: 20px
+		line-height: 20px		
 .example-pager
 	position: absolute
 	top: 100px
 	right: 200px
 	z-index: 999
-	font-size: 0 
+	font-size: 0
+	+r(desktop)
+		right: 100px
+	+r(ipad)
+		top: 50px
+		right: 50px
+	+r(phone_wide)
+		right: 30px 	
 	span
 		display: inline-block
 		vertical-align: top
