@@ -539,9 +539,11 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .error-404 { position: relative; }
 
 .error-404__link { position: absolute; left: 50px; top: 290px; font-size: 31px; font-weight: bold; color: white; line-height: 1.2; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+@media only screen and (max-width: 360px) { .error-404__link { left: 20px; top: 130px; } }
 .error-404__link:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; text-decoration: underline; }
 
 .error-404__alert { position: absolute; top: 500px; left: 50px; width: 308px; font-size: 33px; color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+@media only screen and (max-width: 360px) { .error-404__alert { left: 20px; top: 200px; } }
 .error-404__alert span { display: block; font-weight: bold; font-size: 123px; }
 
 /* CSS Styles that are needed by jScrollPane for it to operate correctly.  Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane may not operate correctly without them. */
