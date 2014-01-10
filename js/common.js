@@ -58,9 +58,13 @@ $(document).ready(function() {
 
 	// scroll pane
 
-	if ($(".scroll-pane").length >0 ){
-        $('.scroll-pane').jScrollPane();
-    } 
+    function search_dropdown(){
+        if ($(".scroll-pane").length >0 ){
+            $('.scroll-pane').jScrollPane();
+        }
+    }
+	
+    search_dropdown();
 	
     //sidebar show/hide
 
@@ -146,6 +150,7 @@ $(document).ready(function() {
     		info_scroll();
     	}
         drop_reset();
+        search_dropdown();
     });
 
 });
