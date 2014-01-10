@@ -101,9 +101,8 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .sub-menu.is-active { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; visibility: visible; display: block; padding-top: 15px; }
 
-.sidebar-btn { display: none; position: absolute; bottom: -42px; right: 32px; width: 32px; height: 32px; cursor: pointer; }
+.sidebar-btn { display: none; position: absolute; top: 42px; right: 42px; width: 32px; height: 32px; cursor: pointer; }
 @media only screen and (max-width: 1024px) { .sidebar-btn { display: block; } }
-@media only screen and (max-width: 800px) { .sidebar-btn { bottom: -70px; } }
 .sidebar-btn i { display: block; background: url('../img/icons-sfcb65d692a.png') 0 -1486px no-repeat; width: 32px; height: 32px; }
 
 .a-link { position: relative; }
@@ -171,9 +170,12 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .widget__inner { position: relative; padding-top: 40px; }
 
-.footer__main { overflow: hidden; height: 41px; padding-top: 5px; background: #e1c88c; }
+.footer__main { overflow: hidden; height: 41px; padding: 5px 5px 0; background: #e1c88c; }
+@media only screen and (max-width: 600px) { .footer__main { height: auto; padding: 5px; } }
+@media only screen and (max-width: 600px) { .footer__main .wrap { text-align: center; } }
 
 .copyrights { float: left; color: white; line-height: 37px; font-size: 13px; }
+@media only screen and (max-width: 600px) { .copyrights { float: none; } }
 .copyrights span:first-child { text-transform: uppercase; }
 
 .footer__bot { height: 56px; line-height: 56px; text-align: center; }
@@ -186,6 +188,7 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .sticky-footer .push { height: 106px; }
 
 .socials { float: right; font-size: 0; }
+@media only screen and (max-width: 600px) { .socials { clear: both; float: none; display: inline-block; } }
 .socials li { display: inline-block; margin-left: 10px; }
 .socials i { display: block; }
 
@@ -275,7 +278,8 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .post { width: 33.333%; margin-bottom: 75px; padding: 0 0.938em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 800px) { .post { width: 50%; } }
-@media only screen and (max-width: 480px) { .post { width: 100%; } }
+@media only screen and (max-width: 480px) { .post { padding: 0 0.469em; } }
+@media only screen and (max-width: 360px) { .post { width: 100%; } }
 
 .post__inner { border: 1px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .post__inner:hover { border: 1px solid #d8d8d8; }
@@ -302,18 +306,27 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .add-post__inner { height: 566px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 2px solid #e1c78b; }
 @media only screen and (max-width: 800px) { .add-post__inner { height: 467px; } }
+@media only screen and (max-width: 480px) { .add-post__inner { height: 385px; } }
 .add-post__inner:hover { border: 2px solid #e1c78b; }
 
 .add-post__arrow { position: absolute; top: 65px; left: 50%; margin-left: -76px; width: 142px; height: 142px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; border: 5px solid #e0c78b; }
 .add-post__arrow:after { content: ""; position: absolute; top: 56px; left: 40px; background: url('../img/icons-sfcb65d692a.png') 0 0 no-repeat; width: 60px; height: 35px; }
+@media only screen and (max-width: 480px) { .add-post__arrow { width: 112px; height: 112px; margin-left: -61px; }
+  .add-post__arrow:after { top: 42px; left: 26px; } }
 
 .add-post__text { position: absolute; bottom: 40px; left: 50%; width: 250px; margin-left: -125px; font-size: 63px; font-weight: bold; color: #e1c88c; text-align: center; }
+@media only screen and (max-width: 480px) { .add-post__text { font-size: 47px; } }
 
 .rubric-wpapper { margin-bottom: 90px; }
+@media only screen and (max-width: 768px) { .rubric-wpapper { margin-bottom: 50px; } }
+@media only screen and (max-width: 600px) { .rubric-wpapper { margin-bottom: 30px; } }
 
 .rubric-list { padding: 26px 24px; }
 
 .rubric { width: 207px; font-size: 21px; }
+@media only screen and (max-width: 900px) { .rubric { width: 170px; } }
+@media only screen and (max-width: 768px) { .rubric { width: 45%; } }
+@media only screen and (max-width: 360px) { .rubric { width: 48%; } }
 .rubric img { width: 100%; height: auto; margin-bottom: 18px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid rgba(153, 122, 72, 0.1); }
 .rubric a { color: black; }
 .rubric a:hover { font-weight: bold; }
@@ -321,14 +334,23 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .sidebar { float: right; width: 32%; background: white; }
 @media only screen and (max-width: 1024px) { .sidebar { position: relative; right: -500px; -webkit-transition: all 400ms; -moz-transition: all 400ms; -o-transition: all 400ms; transition: all 400ms; } }
 @media only screen and (max-width: 800px) { .sidebar { width: 50%; } }
-@media only screen and (max-width: 480px) { .sidebar { width: 100%; } }
+@media only screen and (max-width: 360px) { .sidebar { width: 100%; } }
 .sidebar img { width: 100%; height: auto; }
 
 .sidebar.is-open { right: 0; }
 
 .bot-menu { margin-bottom: 120px; }
+@media only screen and (max-width: 768px) { .bot-menu { margin-bottom: 90px; } }
+@media only screen and (max-width: 600px) { .bot-menu { margin-bottom: 60px; } }
+@media only screen and (max-width: 480px) { .bot-menu { margin-bottom: 30px; } }
 
 .bot-menu__item { text-align: left; width: 207px; }
+@media only screen and (max-width: 1080px) { .bot-menu__item { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 5%; width: 19%; } }
+@media only screen and (max-width: 900px) { .bot-menu__item { padding-left: 3%; } }
+@media only screen and (max-width: 768px) { .bot-menu__item { padding-left: 1%; margin-bottom: 15px; } }
+@media only screen and (max-width: 600px) { .bot-menu__item { width: 49%; padding-left: 8%; } }
+@media only screen and (max-width: 480px) { .bot-menu__item { padding-left: 3%; } }
+@media only screen and (max-width: 360px) { .bot-menu__item { padding-left: 1%; } }
 .bot-menu__item .h5 { display: inline-block; padding: 2px 9px; margin-bottom: 19px; }
 
 .bot-menu-list { padding-left: 15px; }

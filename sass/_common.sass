@@ -255,15 +255,13 @@ $gold: #e1c88c
 .sidebar-btn
 	display: none
 	position: absolute
-	bottom: -42px
-	right: 32px
+	top: 42px
+	right: 42px
 	width: 32px
 	height: 32px
 	cursor: pointer
 	+r(ipad_wide)
-		display: block
-	+r(tablet)
-		bottom: -70px	
+		display: block	
 	i
 		display: block
 		+s(plus)
@@ -447,13 +445,21 @@ $gold: #e1c88c
 .footer__main
 	overflow: hidden
 	height: 41px
-	padding-top: 5px 
+	padding: 5px 5px 0
 	background: $gold
+	+r(tablet_small)
+		height: auto
+		padding: 5px
+	.wrap
+		+r(tablet_small)
+			text-align: center	  
 .copyrights
 	float: left
 	color: #fff
 	line-height: 37px 
 	font-size: 13px
+	+r(tablet_small)
+		float: none
 	span
 		&:first-child
 			text-transform: uppercase
@@ -489,6 +495,10 @@ $gold: #e1c88c
 .socials
 	float: right
 	font-size: 0
+	+r(tablet_small)
+		clear: both
+		float: none
+		display: inline-block
 	li
 		display: inline-block
 		margin-left: 10px 

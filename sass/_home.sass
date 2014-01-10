@@ -113,6 +113,8 @@
 	+r(tablet)
 		width: 50%
 	+r(phone_wide)
+		padding: 0 0.469em 	
+	+r(phone)
 		width: 100% 	 	
 .post__inner
 	border: 1px solid #fff
@@ -162,6 +164,8 @@
 	border: 2px solid #e1c78b
 	+r(tablet)
 		height: 467px
+	+r(phone_wide)
+		height: 385px 	
 	&:hover
 		border: 2px solid #e1c78b		 	
 .add-post__arrow
@@ -172,13 +176,20 @@
 	width: 142px
 	height: 142px
 	+border-radius(50%)
-	border: 5px solid #e0c78b
+	border: 5px solid #e0c78b	  
 	&:after
 		content: ""
 		position: absolute
 		top: 56px
 		left: 40px
-		+s(arr-down)
+		+s(arr-down)			
+	+r(phone_wide)
+		width: 112px
+		height: 112px
+		margin-left: -61px 
+		&:after
+			top: 42px
+			left: 26px		
 .add-post__text
 	position: absolute
 	bottom: 40px
@@ -189,15 +200,27 @@
 	font-weight: bold
 	color: $gold
 	text-align: center 
-	
+	+r(phone_wide)
+		font-size: 47px
+
 // rubric
 .rubric-wpapper
-	margin-bottom: 90px 
+	margin-bottom: 90px
+	+r(ipad)
+		margin-bottom: 50px
+	+r(tablet_small)
+		margin-bottom: 30px  
 .rubric-list
 	padding: 26px 24px
 .rubric
 	width: 207px 
 	font-size: 21px
+	+r(tablet_wide)
+		width: 170px
+	+r(ipad)
+		width: 45%
+	+r(phone)
+		width: 48% 	 	 
 	img
 		width: 100%
 		height: auto 
@@ -214,26 +237,49 @@
 .sidebar
 	float: right
 	width: 32%
-	background: #FFF 
+	background: #FFF
 	+r(ipad_wide)
 		position: relative
 		right: -500px
 		+transition(all 400ms)
 	+r(tablet)
 		width: 50%
-	+r(phone_wide)	 	 
+	+r(phone)	 	 
 		width: 100% 
 	img
 		width: 100%
 		height: auto
 .sidebar.is-open
 	right: 0 		
+
 // footer bot menu
 .bot-menu
-	margin-bottom: 120px 				 
+	margin-bottom: 120px
+	+r(ipad)
+		margin-bottom: 90px
+	+r(tablet_small)
+		margin-bottom: 60px
+	+r(phone_wide)
+		margin-bottom: 30px		 				 
 .bot-menu__item
 	text-align: left
 	width: 207px
+	+r(desktop)
+		+box
+		padding-left: 5%
+		width: 19%
+	+r(tablet_wide)
+		padding-left: 3%
+	+r(ipad)
+		padding-left: 1%
+		margin-bottom: 15px
+	+r(tablet_small)
+		width: 49%
+		padding-left: 8%
+	+r(phone_wide)
+		padding-left: 3%
+	+r(phone)
+		padding-left: 1% 	   	   
 	.h5
 		display: inline-block
 		padding: 2px 9px 
