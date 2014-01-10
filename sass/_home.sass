@@ -244,8 +244,12 @@
 		+transition(all 400ms)
 	+r(tablet)
 		width: 50%
-	+r(phone)	 	 
-		width: 100% 
+	+r(tablet_small)
+		width: 60%
+	+r(phone_wide)
+		width: 75%
+	+r(phone)
+		width: 100% 	 	
 	img
 		width: 100%
 		height: auto
@@ -519,20 +523,24 @@
 	position: relative
 	text-align: center
 	font-size: 26px
-	font-weight: bold 
+	font-weight: bold
+	+r(ipad_wide)
+		font-size: 22px 
 .month__prev
 	position: absolute
 	top: 0
 	left: 30px
 	+s(prev)
+	+r(tablet_wide)
+		left: 15px
 .month__next
 	position: absolute
 	top: 0
 	right: 30px
 	+s(next)
+	+r(tablet_wide)
+		right: 15px
 .calendar-table
-	width: 295px
-	margin: 0 auto
 	a
 		display: inline-block
 		width: 30px
@@ -554,14 +562,18 @@
 .week
 	margin-bottom: 20px
 .event-list
-	+clr
+	font-size: 0
+	vertical-align: top
 	margin: 22px 22px 0px
 	padding-bottom: 30px 
 	border-bottom: 1px solid $gold
 	+box-shadow(inset 0px -1px 0px #f1e6cc, 0 1px 0px #f1e6cc) 
 	li
-		float: left
-		margin-left: 20px
+		display: inline-block
+		width: 25%
+		+r(ipad_wide)
+			width: 50%
+			margin-bottom: 15px   
 		&:first-child
 			margin-left: 0 
 		img
