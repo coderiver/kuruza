@@ -600,7 +600,10 @@
 				border: 2px solid $gold	
 .event-slider__img
 	float: left
-	margin-right: 5px 
+	margin-right: 5px
+	+r(desktop)
+		float: none
+		margin-right: 0 
 	img
 		width: 54px
 		height: 54px
@@ -609,7 +612,9 @@
 .event-slider__text
 	float: left
 	font-size: 0
-	line-height: 1  
+	line-height: 1
+	+r(desktop)
+		float: none  
 .event-slider__title
 	font-size: 23px
 	font-weight: bold
@@ -623,17 +628,27 @@
 	width: 48px
 	padding-left: 8px 
 	color: #cbcbcb
+	+r(tablet_wide)
+		width: auto 
 .event-slider__right
 	float: right
 	width: 142px
 	font-weight: bold
+	+r(tablet_wide)
+		width: auto
+	+r(tablet)
+		width: 60% 	
 .event-slider__prev
 	position: absolute
 	top: 22px
 	left: -8px
 	+s(prev-small)
+	+r(desktop)
+		top: 50%
 .event-slider__next
 	position: absolute
 	top: 22px
 	right: -8px
-	+s(next-small)		
+	+s(next-small)
+	+r(desktop)
+		top: 50%		
