@@ -1,13 +1,21 @@
 .fashion-guide
-    width: 966px
+    max-width: 966px
     margin: 0 auto
     .h2
         width: 96%
         margin: 0 auto     
 .fashion-slider
     position: relative
-    width: 966px
-    height: 518px 
+    max-width: 966px
+    height: 518px
+    +r(tablet)
+        height: 418px
+    +r(tablet_small)
+        height: 318px
+    +r(phone_wide)
+        height: 268px
+    +r(phone)
+        height: 218px           
     .example-pager
         top: 20px
         right: 20px

@@ -151,6 +151,10 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .h1 { position: relative; font-weight: bold; font-size: 60px; z-index: 2; }
 
 .h2 { text-align: center; font-weight: bold; font-size: 42px; }
+@media only screen and (max-width: 800px) { .h2 { font-size: 38px; } }
+@media only screen and (max-width: 600px) { .h2 { font-size: 34px; } }
+@media only screen and (max-width: 480px) { .h2 { font-size: 32px; } }
+@media only screen and (max-width: 360px) { .h2 { font-size: 28px; } }
 
 .h3 { font-weight: bold; font-size: 35px; color: black; }
 .h3 a { font-weight: bold; font-size: 35px; color: black; }
@@ -238,6 +242,9 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .inner-menu { margin: 28px 0 31px; text-align: center; }
 
 .inner-menu__item { display: inline-block; margin: 0 38px; }
+@media only screen and (max-width: 600px) { .inner-menu__item { margin: 0 5%; } }
+@media only screen and (max-width: 480px) { .inner-menu__item { margin: 0 2%; } }
+@media only screen and (max-width: 360px) { .inner-menu__item { display: block; } }
 .inner-menu__item .h5 { padding: 0 5px; }
 
 .scroll-pane { outline: none; }
@@ -606,10 +613,14 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .contacts__right { float: right; width: 168px; text-align: left; }
 
-.fashion-guide { width: 966px; margin: 0 auto; }
+.fashion-guide { max-width: 966px; margin: 0 auto; }
 .fashion-guide .h2 { width: 96%; margin: 0 auto; }
 
-.fashion-slider { position: relative; width: 966px; height: 518px; }
+.fashion-slider { position: relative; max-width: 966px; height: 518px; }
+@media only screen and (max-width: 800px) { .fashion-slider { height: 418px; } }
+@media only screen and (max-width: 600px) { .fashion-slider { height: 318px; } }
+@media only screen and (max-width: 480px) { .fashion-slider { height: 268px; } }
+@media only screen and (max-width: 360px) { .fashion-slider { height: 218px; } }
 .fashion-slider .example-pager { top: 20px; right: 20px; }
 
 .fashion { *zoom: 1; }
