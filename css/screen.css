@@ -755,7 +755,7 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .article__date:before { content: ""; position: absolute; top: 0px; right: 3px; background: url('../img/icons-sfcb65d692a.png') 0 -1352px no-repeat; width: 17px; height: 19px; }
 
-.article__share { color: gray; }
+.article__share { color: gray; overflow: hidden; }
 .article__share p { margin-bottom: 10px; }
 .article__share .socials { width: 120px; }
 .article__share .socials li { margin-bottom: 10px; }
