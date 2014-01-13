@@ -731,7 +731,11 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .article__head_mod3 { position: relative; margin-bottom: 44px; }
 .article__head_mod3 img { position: relative; text-align: center; z-index: 1; }
 .article__head_mod3 .h1, .article__head_mod3 .article__subtitle { position: absolute; top: 50px; left: 0; right: 0; text-align: center; color: white; line-height: 1; }
+@media only screen and (max-width: 1080px) { .article__head_mod3 .h1, .article__head_mod3 .article__subtitle { top: 100px; } }
+@media only screen and (max-width: 480px) { .article__head_mod3 .h1, .article__head_mod3 .article__subtitle { top: 50px; } }
 .article__head_mod3 .article__subtitle { top: 200px; font-size: 17px; text-transform: uppercase; }
+@media only screen and (max-width: 1080px) { .article__head_mod3 .article__subtitle { top: 250px; } }
+@media only screen and (max-width: 480px) { .article__head_mod3 .article__subtitle { top: 200px; } }
 
 .article__head_mod6 { position: relative; margin-bottom: 44px; }
 .article__head_mod6 .h1 { font-size: 124px; line-height: 1; margin-bottom: 80px; }

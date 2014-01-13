@@ -196,11 +196,19 @@
         right: 0
         text-align: center
         color: #fff
-        line-height: 1 
+        line-height: 1
+        +r(desktop)
+            top: 100px
+        +r(phone_wide)
+            top: 50px     
     .article__subtitle
         top: 200px
         font-size: 17px
         text-transform: uppercase
+        +r(desktop)
+            top: 250px
+        +r(phone_wide)
+            top: 200px
 .article__head_mod6
     position: relative
     margin-bottom: 44px 
