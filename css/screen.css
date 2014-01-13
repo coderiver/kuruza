@@ -739,6 +739,10 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .article__head_mod6 { position: relative; margin-bottom: 44px; }
 .article__head_mod6 .h1 { font-size: 124px; line-height: 1; margin-bottom: 80px; }
+@media only screen and (max-width: 1024px) { .article__head_mod6 .h1 { font-size: 100px; } }
+@media only screen and (max-width: 900px) { .article__head_mod6 .h1 { font-size: 70px; margin-bottom: 40px; } }
+@media only screen and (max-width: 800px) { .article__head_mod6 .h1 { font-size: 50px; margin-bottom: 30px; } }
+@media only screen and (max-width: 480px) { .article__head_mod6 .h1 { font-size: 40px; } }
 .article__head_mod6 .article__subtitle { font-size: 16px; font-weight: bold; line-height: 1.6; }
 
 .article__subtitle { position: relative; font-size: 25px; line-height: 1; margin-bottom: 36px; z-index: 2; }
