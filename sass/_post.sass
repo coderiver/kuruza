@@ -171,8 +171,13 @@
         top: 120px
         right: 0
         width: 400px
-        font-size: 61px
+        font-size: 40px
         z-index: 2
+        +r(tablet_small)
+            width: auto 
+            font-size: 40px
+        +r(phone_wide)
+            font-size: 30px      
         span
             color: #ffc866
     .article__subtitle

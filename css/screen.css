@@ -722,7 +722,9 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 
 .article__head_mod2 { position: relative; text-align: left; margin-bottom: 44px; }
 .article__head_mod2 img { position: relative; margin-bottom: 20px; z-index: 1; }
-.article__head_mod2 .h1 { position: absolute; top: 120px; right: 0; width: 400px; font-size: 61px; z-index: 2; }
+.article__head_mod2 .h1 { position: absolute; top: 120px; right: 0; width: 400px; font-size: 40px; z-index: 2; }
+@media only screen and (max-width: 600px) { .article__head_mod2 .h1 { width: auto; font-size: 40px; } }
+@media only screen and (max-width: 480px) { .article__head_mod2 .h1 { font-size: 30px; } }
 .article__head_mod2 .h1 span { color: #ffc866; }
 .article__head_mod2 .article__subtitle { font-size: 32px; }
 
