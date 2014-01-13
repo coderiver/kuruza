@@ -1,14 +1,16 @@
 .about-us
     .h2
-        width: 936px
+        max-width: 936px
         margin: 0 auto 60px 
 .about-us__inner
     +clr
-    width: 976px 
-    margin: 0 auto 
+    max-width: 976px 
+    margin: 0 auto
+    padding: 0 15px
+    +box  
 .about-us__block
     position: relative
-    width: 486px
+    width: 49.7%
     min-height: 486px 
     float: left
     padding: 130px 94px 20px
@@ -20,7 +22,21 @@
             +opacity(0)
             z-index: -1
     &:first-child
-        margin-left: 0        
+        margin-left: 0
+        +r(tablet_small)
+            margin-left: auto 
+    +r(ipad_wide)
+        padding: 130px 64px 20px
+    +r(ipad)
+        width: 48% 
+        padding: 80px 34px 20px
+    +r(tablet_small)
+        float: none
+        width: 80%
+        min-height: 320px 
+        margin: 0px auto 10px
+    +r(phone_wide)
+        width: 100%                         
 .about-us__hover
     position: absolute
     top: 0
@@ -36,6 +52,8 @@
     text-transform: uppercase
     font-size: 37px
     font-weight: bold
+    +r(tablet_small)
+        display: none
     span
         position: absolute
         top: 50%
@@ -65,10 +83,10 @@
         color: #000    
 .contacts__left
     float: left
-    width: 110px
+    width: 40%
     text-align: right
     color: #8c8c8c
 .contacts__right
     float: right
-    width: 168px 
+    width: 50% 
     text-align: left                      
