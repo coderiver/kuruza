@@ -18,6 +18,10 @@ ul, ol { list-style-type: none; }
 a { text-decoration: none; }
 a:hover { text-decoration: none; }
 
+.cf:before,.cf:after { content:""; display:table;}
+.cf:after { clear:both; }
+.cf { zoom:1; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
@@ -28,7 +32,7 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .wrapper { *zoom: 1; }
 .wrapper:after { content: " "; display: table; clear: both; }
 
-.container { overflow: hidden; }
+.container { }
 
 .header { padding-top: 35px; }
 @media only screen and (max-width: 800px) { .header { padding-top: 10px; } }
