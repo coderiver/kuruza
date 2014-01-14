@@ -22,6 +22,29 @@
 .fashion
     position: relative
     +clr
+    margin-bottom: 20px
+    +r(ipad)
+        margin-top: 30px
+.fasnion__btn
+    display: none
+    position: absolute
+    top: -30px
+    left: 6%
+    cursor: pointer
+    i
+        display: block
+        +s(drop-menu2)
+    +r(ipad)
+        display: block    
+.fashion__bg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,.3)
+    z-index: 2
+    +transition(all 400ms)                   
 .l-fashion__sidebar, .l-fashion__content
     float: left
     padding: 7px 0
@@ -32,9 +55,23 @@
     overflow: auto 
     padding: 5px 5px 5px 15px
     +box
+.l-fashion__sidebar
+    background: #fff
+    +r(ipad)
+        position: absolute
+        left: -200px
+        +transition(all 400ms)
+        z-index: 3
+.l-fashion__sidebar.is-open
+    right: auto
+    left: 0          
 .l-fashion__content
+    position: relative
     float: right
     width: 75% 
+    +r(ipad)
+        width: 90%
+        margin-right: 4%  
 .fashion-list
     li
         a
@@ -62,10 +99,17 @@
     height: 504px
     overflow: auto 
     padding: 17px
-    +box      
+    +box
+    +r(tablet_small)
+        width: 92% 
+.fashion__content.narrow
+    overflow: initial
+    height: auto           
 .fashion__header-list
     font-size: 0
     margin-bottom: 40px
+    +r(phone_wide)
+        margin-bottom: 20px
     li
         display: inline-block
         width: 25%
@@ -74,9 +118,15 @@
         padding-left: 5% 
         font-size: 13px
         font-weight: bold
+        +r(phone_wide)
+            display: block
+            width: auto
+            text-align: center 
         p
             &:first-child
                 padding-top: 7px
+        img
+            max-width: 100%        
 .fashion__about
     p, img
         margin-bottom: 22px

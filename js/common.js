@@ -59,15 +59,15 @@ $(document).ready(function() {
 	// scroll pane
 
     function search_dropdown(){
-        if ($(".scroll-pane").length >0 ){
+        if ($(".scroll-pane").length > 0){
             $('.scroll-pane').jScrollPane({
                 reinitialise: true
-            });
+            }); 
         }
     }
 	
     search_dropdown();
-	
+
     //sidebar show/hide
 
     $(".sidebar-btn").click(function(){
@@ -132,6 +132,18 @@ $(document).ready(function() {
     	info_scroll();
     	author_scroll();
     }
+
+    // show/hide fashion sidebar
+
+    $(".fashion__bg").hide();
+    
+    function fashion_hide(){
+        $(".js-fashion-show").click(function(){
+            $(".l-fashion__sidebar").toggleClass('is-open');
+            $(".fashion__bg").toggle();
+        });
+    }
+    fashion_hide();
 
 
     $(window).scroll(function(){
