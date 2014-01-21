@@ -116,14 +116,17 @@ $(document).ready(function() {
     	var position3 = $(".js-article-info").offset().top;
     	var	position_off3 = $(".article").offset().top;
     	var pos_left2 = $(".article").offset().left + 778;
+        var pos_width = $(".article").offset().left;
 
     	if ($(window).scrollTop() >= position3 - header_height) {
     		$(".js-article-info").addClass('fixed');
     		$(".js-article-info").css('right', pos_left2);
+            $(".js-article-info").css('width', pos_width);
     	}
     	if ($(window).scrollTop() <= position_off3 - header_height){
     		$(".js-article-info").removeClass('fixed');
     		$(".js-article-info").css('right', 778);
+            //$(".js-article-info").css('width', pos_width);
     	}
     	else {}
     }
