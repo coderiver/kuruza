@@ -5,10 +5,13 @@ $(document).ready(function() {
     function sub_menu(){
         var sub_menu_width = $(".menu").outerWidth();
         var sub_menu_margin = (-sub_menu_width / 2);
-        $(".sub-menu").css({
-            'width': sub_menu_width,
-            'margin-left': sub_menu_margin
-        });
+        if($(window).width() > 800){
+            $(".sub-menu").css({
+                'width': sub_menu_width,
+                'margin-left': sub_menu_margin
+            });
+        }
+       
     }
     sub_menu();
 
