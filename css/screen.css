@@ -108,6 +108,7 @@ body { font-size: 16px; font-family: "Tinos", serif; line-height: 1.4; }
 .sub-menu.is-active { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; visibility: visible; display: block; padding-top: 15px; }
 
 .menu__item_last .sub-menu { left: auto; right: 0; text-align: right; margin-right: -32px; }
+@media only screen and (max-width: 800px) { .menu__item_last .sub-menu { width: auto; } }
 
 .sidebar-btn { display: none; position: absolute; top: 42px; right: 42px; width: 32px; height: 32px; cursor: pointer; }
 @media only screen and (max-width: 1024px) { .sidebar-btn { display: block; } }
